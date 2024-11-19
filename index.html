@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان استراتيجية حل المشكلات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 استبيان استراتيجية حل المشكلات</h1>
+        <form id="surveyForm">
+            <div class="input-group">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input-group">
+                <label>هل تعرف استراتيجية حل المشكلات؟</label>
+                <select id="knowStrategy" required>
+                    <option value="">اختر إجابة</option>
+                    <option value="نعم">نعم</option>
+                    <option value="لا">لا</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>هل جربت تطبيق استراتيجية حل المشكلات في التعليم أو العمل؟</label>
+                <select id="appliedStrategy" required>
+                    <option value="">اختر إجابة</option>
+                    <option value="نعم">نعم</option>
+                    <option value="لا">لا</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="feedback">كيف تقيم فعالية هذه الاستراتيجية في حل المشكلات؟</label>
+                <textarea id="feedback" rows="3" required></textarea>
+            </div>
+            <button type="submit" id="submitBtn">إرسال 🚀</button>
+        </form>
+        <div id="responseMessage"></div>
+        <button id="themeToggle">تبديل الوضع</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
